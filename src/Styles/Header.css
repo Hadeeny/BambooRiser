@@ -1,0 +1,109 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Commissioner"); */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Commissioner", Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+}
+.container {
+  background: url("../assets/image-hero-desktop.jpg");
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+
+.nav-container {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.hamburger {
+  display: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  padding: 15px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    background: url("../assets/image-hero-mobile.jpg");
+    background-size: cover;
+    height: 300px;
+    position: relative;
+  }
+  nav {
+    display: block;
+  }
+  nav ul {
+    background-color: white;
+    margin-top: 20px;
+    width: 400px;
+    height: 170px;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  nav a {
+    color: black;
+  }
+  nav li {
+    padding: 19.3px;
+    border-bottom: 1px solid #333;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .toggle {
+    cursor: pointer;
+  }
+
+  .item {
+    display: block;
+  }
+  .item-active {
+    display: none;
+  }
+}
